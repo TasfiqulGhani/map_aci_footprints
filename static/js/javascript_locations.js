@@ -366,7 +366,7 @@ function nearbybutton(type) {
 		lng,
 		lat
 	} = map.getCenter();
-	displayapi='http://127.0.0.1:8000/getaddress/?bounding='+map.getBounds().toArray()
+	displayapi='http://36.255.71.1:8001/getaddress/?bounding='+map.getBounds().toArray()
 
 	// console.log()
 	nearbyapi = 'https://barikoi.xyz/v1/api/search/nearby/category/MTpPVkhCVEZaM09F/0.5/10?longitude=' + lng + '&latitude=' + lat + '&ptype=' + type + '';

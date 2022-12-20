@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+{#36.255.71.1:8001#}
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -133,7 +133,7 @@
     // https://account.mapbox.com
     console.log('{{data}}')
 
-    let places = 'http://127.0.0.1:8000/static/datanew.geojson';
+    let places = 'http://36.255.71.1:8001/static/datanew.geojson';
 
     const filterGroup = document.getElementById('filter-group');
 
@@ -151,15 +151,15 @@
         lat
     } = map.getCenter();
     $(document).on("click", '.pharmaceutical', function (event) {
-        window.location.href = `http://127.0.0.1:8000/loadpoints/?type=1&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
+        window.location.href = `http://36.255.71.1:8001/loadpoints/?type=1&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
 
     });
     $(document).on("click", '.electrical', function (event) {
-        window.location.href = `http://127.0.0.1:8000/loadpoints/?type=2&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
+        window.location.href = `http://36.255.71.1:8001/loadpoints/?type=2&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
 
     });
     $(document).on("click", '.all', function (event) {
-        window.location.href = `http://127.0.0.1:8000/loadpoints/?type=0&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
+        window.location.href = `http://36.255.71.1:8001/loadpoints/?type=0&lng=${lng}&lat=${lat}&zoom=` + map.getZoom();
 
     });
     map.on('load', () => {

@@ -16,8 +16,8 @@ def loadpoints(request):
 
     context = {
 
-        'data': 'http://127.0.0.1:8000/static/pharma.geojson' if type_val == '1' else (
-            'http://127.0.0.1:8000/static/electrical.geojson' if type_val == '2' else 'http://127.0.0.1:8000/static/all.geojson'),
+        'data': 'http://36.255.71.1:8001/static/pharma.geojson' if type_val == '1' else (
+            'http://36.255.71.1:8001/static/electrical.geojson' if type_val == '2' else 'http://36.255.71.1:8001/static/all.geojson'),
         'type': type_val if type_val else 0,
         'zoom': zoom_val if zoom_val else 6,
         'lat': lat_val if lat_val else 23.7645784,
